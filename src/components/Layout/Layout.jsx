@@ -1,14 +1,5 @@
-import { Container, Title } from './Layout.styled';
+import { Container } from './Layout.styled';
 
-export const Layout = ({ title, children }) => {
-  return (
-    <Container>
-      <header></header>
-      <main>
-        <Title>{title}</Title>
-        {children}
-      </main>
-      <footer></footer>
-    </Container>
-  );
+export const Layout = ({ children }) => {
+  return <Container>{children}</Container>;
 };
